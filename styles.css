@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@400;500;700&display=swap');
+
+/* GENERAL */
+* {
+  font-family: 'Yantramanav', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f0f1f3;
+  position: relative;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.tags {
+  color: tomato;
+}
+
+/* HOME */
+#header {
+  background: url(imgs/background.jpg) center center / cover no-repeat;
+  color: white;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 170px;
+}
+
+hr {
+  width: 400px;
+  border-top: 3px solid #f8f8f8;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.location {
+  text-decoration: none;
+  color: #dac86e;
+}
+
+.location:hover {
+  text-decoration: none;
+  color: #e9ecd0;
+}
+
+/* PORTFOLIIO */
+.project {
+  border-bottom: 8px solid #ccc;
+  transition: all 0.5s;
+}
+
+.project:hover {
+  border-color: #1a3652;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+.git-link {
+  color: #320032;
+  border-color: #320032;
+}
+
+.git-link:hover {
+  color: white;
+  background-color: #320032;
+  border-color: #320032;
+}
+
+/* SKILLS */
+
+.skill {
+  transition: all 0.4s;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+.skill:hover {
+  opacity: 0.8;
+  box-shadow: 6px 6px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.react-logo,
+.css-logo,
+.git-logo,
+.html-logo,
+.jira-logo,
+.js-logo,
+.node-logo,
+.npm-logo,
+.sass-logo,
+.sql-logo,
+.sourcetree-logo,
+.font-logo {
+  transition: all ease-out 0.3s;
+}
+
+.react-logo {
+  color: #61dafb;
+}
+
+.css-logo {
+  color: #1b73ba;
+}
+
+.git-logo {
+  color: #a747b2;
+}
+
+.html-logo {
+  color: #e34d25;
+}
+
+.jira-logo {
+  color: #2684ff;
+}
+
+.js-logo {
+  color: #f0db4f;
+}
+
+.node-logo {
+  color: #85b557;
+}
+
+.npm-logo {
+  color: #c53635;
+}
+
+.sass-logo {
+  color: #c96195;
+}
+
+.sql-logo {
+  color: #bc1c1b;
+}
+
+.sourcetree-logo {
+  color: #2580f7;
+}
+
+.font-logo {
+  color: #1c9971;
+}
+
+/* CONTACT */
+.email {
+  text-decoration: none;
+  color: #4a6774;
+}
+.email:hover {
+  text-decoration: none;
+}
+
+.network {
+  display: inline-block;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  transition: all 0.8s;
+}
+
+.twitter {
+  background-image: url(imgs/svg/logo_twitter.svg);
+}
+
+.linkedin {
+  background-image: url(imgs/svg/logo_linkedin.svg);
+}
+
+.github {
+  background-image: url(imgs/svg/logo_github.svg);
+}
+
+.freecodecamp {
+  background-image: url(imgs/svg/logo_freecodecamp.svg);
+}
+
+.hackerrank {
+  background-image: url(imgs/svg/logo_hackerrank.svg);
+}
+
+.twitter:hover,
+.linkedin:hover,
+.github:hover,
+.freecodecamp:hover,
+.hackerrank:hover {
+  opacity: 0.6;
+}
+
+/* Alert  */
+.myAlert {
+  padding: 0px;
+  transition: ease 1s;
+  margin-bottom: 16px;
+}
+
+.alert-banner {
+  color: white;
+  background-color: #27a745;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.alert-banner p {
+  margin: 0;
+}
+
+.alert-banner p:nth-child(2) {
+  font-weight: bold;
+}
+
+.alert-banner p:nth-child(2):hover {
+  cursor: pointer;
+}
+
+/* Resorces */
+.resources {
+  padding-top: 30px;
+}
+
+.resources p {
+  margin: 0;
+  padding-right: 10px;
+}
+
+.resources > i:hover {
+  transition: all ease-out 0.5s;
+  opacity: 0.8;
+  cursor: pointer;
+  animation: shake 0.9s;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: rotate(20deg);
+  }
+  30% {
+    transform: rotate(-20deg);
+  }
+  45% {
+    transform: rotate(15deg);
+  }
+  60% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  85% {
+    transform: rotate(-10deg);
+  }
+  92% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+/* Modal Window */
+#box {
+  width: 400px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 0 20px black;
+  border-radius: 10px;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9000;
+  text-align: center;
+  display: none;
+}
+
+#box h1 {
+  color: #333;
+  margin: 0;
+  padding: 15px;
+  color: white;
+  background-color: #2c4457;
+}
+
+.my-close {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  background-color: #2c4457;
+  padding: 10px 30px;
+  display: inline-block;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.my-close:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.list-notifications {
+  display: flex;
+  flex-direction: column;
+}
+
+.notification {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 130px;
+}
+
+.notification a,
+.notification h3 {
+  margin: 0;
+}
+
+.notification a {
+  margin-left: 5px;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 768px) {
+  #box {
+    top: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #box {
+    top: 85%;
+  }
+}
